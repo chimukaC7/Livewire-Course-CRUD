@@ -8,6 +8,7 @@
                     <div class="card-header">{{ __('Edit product') }}</div>
 
                     <div class="card-body">
+                        {{--reused the same form as used in create with product as a parameter --}}
                         @livewire('products-form', ['product' => $product])
                     </div>
                 </div>

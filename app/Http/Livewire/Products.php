@@ -19,8 +19,12 @@ class Products extends Component
 
     public function mount()
     {
+        //categories are in mount because categories won't change throughout the cycle of the page
+        //they are kinda if static properties,so you mount them once and then use them in your blade
+        //they query would run everytime in every render
+        //whilst products will be dynamic so that is why we need to use render for products
         $this->categories = Category::all();
-        $this->searchQuery = '';
+        $this->searchQuery = '';//by default empty
         $this->searchCategory = '';
     }
 

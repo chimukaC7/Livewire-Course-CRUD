@@ -17,6 +17,16 @@
         </div>
     </div>
     <hr />
+
+    {{--div shows when data is loading meaning when a network request is happening--}}
+    <div class="alert alert-success col-md-12" wire:loading>
+        <p>Loading data, please wait...</p>
+    </div>
+    {{--using a class--}}
+    <div class="alert alert-success col-md-12" wire:loading.class="bg-primary">
+        <p>Loading data, please wait...</p>
+    </div>
+
     <table class="table">
     <thead>
     <tr>
@@ -45,11 +55,9 @@
             <td>{{ $product->description }}</td>
             <td>{{ $product->stock_date }}</td>
             <td>
-                <a class="btn btn-sm btn-primary"
-                   href="{{ route('products.edit', $product) }}">Edit</a>
+                <a class="btn btn-sm btn-primary"  href="{{ route('products.edit', $product) }}">Edit</a>
                 <a onclick="return confirm('Are you sure?') || event.stopImmediatePropagation()"
-                   wire:click="deleteProduct('{{ $product->id }}')"
-                   class="btn btn-sm btn-danger" href="#">Delete</a>
+                   wire:click="deleteProduct('{{ $product->id }}')"  class="btn btn-sm btn-danger" href="#">Delete </a>
             </td>
         </tr>
     @empty
