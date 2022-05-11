@@ -25,7 +25,7 @@ class ProductsForm extends Component
         'product.in_stock' => 'boolean',
         'product.stock_date' => 'date',
         'productCategories' => 'required|array',//also separate rule
-        'photo' => 'image',
+        'photo' => 'image',//also separate rule
     ];
 
     protected $messages = [
