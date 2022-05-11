@@ -24,10 +24,12 @@ class ProductsForm extends Component
         'product.color' => 'string',
         'product.in_stock' => 'boolean',
         'product.stock_date' => 'date',
+//        'product.category_id' =>'required|integer',
         'productCategories' => 'required|array',//also separate rule
         'photo' => 'image',//also separate rule
     ];
 
+    //customizing the message
     protected $messages = [
         'product.category_id.required' => 'Category is required'
     ];
@@ -62,6 +64,7 @@ class ProductsForm extends Component
     {
         $this->validate();
 
+        //take care of the file upload separately then attach to the product
         $filename = $this->photo->store('products', 'public');//we store in the product's folder of public disk
         $this->product->photo = $filename;
 
@@ -69,7 +72,7 @@ class ProductsForm extends Component
         //we save the product separately then with the belongs to many we sync
         $this->product->categories()->sync($this->productCategories);
 
-        return redirect()->route('products.index');
+        return redirect()->route('products.index');//redirecting back
     }
 
     public function updatedProductName()
