@@ -17,6 +17,11 @@ class Products extends Component
 
     protected $paginationTheme = 'bootstrap';
 
+    //how to preserve the query string in the url
+    protected $queryString = [
+        'searchQuery' => ['except' => '']
+    ];
+
     public function mount()
     {
         //categories are in mount because categories won't change throughout the cycle of the page
