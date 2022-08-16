@@ -6,7 +6,7 @@
         <div class="col-md-6">
             <input wire:model="product.name"
                    type="text"
-{{--                   class="form-control @error('product.name') is-invalid @enderror"--}}
+                   {{--                   class="form-control @error('product.name') is-invalid @enderror"--}}
                    class="form-control @error('product.name') is-invalid @else is-valid @enderror"
                    id="name"
                    autocomplete="name" autofocus
@@ -21,7 +21,7 @@
     </div>
 
     <div class="form-group row">
-        <label for="description"  class="col-md-4 col-form-label text-md-right">{{ __('Description') }}</label>
+        <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Description') }}</label>
         <div class="col-md-6">
             <textarea wire:model="product.description"
                       class="form-control @error('product.description') is-invalid @enderror">

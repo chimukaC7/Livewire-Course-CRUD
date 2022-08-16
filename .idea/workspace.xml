@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7050418b-1ef7-4518-aab1-bc17fdaa691f" name="Default Changelist" comment="Mini Adjustments">
-      <change afterPath="$PROJECT_DIR$/ReadMe.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-idea.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Products.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/products-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/products-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/products.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +195,12 @@
       <workItem from="1652271754920" duration="5186000" />
       <workItem from="1652420629634" duration="3294000" />
       <workItem from="1652602425700" duration="2679000" />
-      <workItem from="1652854431233" duration="2490000" />
+      <workItem from="1652854431233" duration="4123000" />
+      <workItem from="1653070911147" duration="2173000" />
+      <workItem from="1653121391276" duration="3631000" />
+      <workItem from="1655326471447" duration="678000" />
+      <workItem from="1656410678604" duration="4332000" />
+      <workItem from="1659473095560" duration="1373000" />
     </task>
     <task id="LOCAL-00001" summary="Mini Adjustments">
       <created>1651399974593</created>
@@ -217,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652278638664</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Mini Adjustments">
+      <created>1652949915210</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652949915210</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
