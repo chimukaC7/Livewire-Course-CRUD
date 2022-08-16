@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7050418b-1ef7-4518-aab1-bc17fdaa691f" name="Default Changelist" comment="Mini Adjustments">
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-idea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/products-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/products-form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/products.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="7050418b-1ef7-4518-aab1-bc17fdaa691f" name="Default Changelist" comment="Mini Adjustments" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -201,6 +196,7 @@
       <workItem from="1655326471447" duration="678000" />
       <workItem from="1656410678604" duration="4332000" />
       <workItem from="1659473095560" duration="1373000" />
+      <workItem from="1660684466438" duration="378000" />
     </task>
     <task id="LOCAL-00001" summary="Mini Adjustments">
       <created>1651399974593</created>
@@ -230,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652949915210</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Mini Adjustments">
+      <created>1660684547374</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660684547374</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
