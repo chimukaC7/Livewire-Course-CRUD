@@ -44,7 +44,14 @@ class ProductForm extends Component
     //when you use rules a function, you can add complex rules
     public function rules(){
         return [
-
+            'product.name' => 'required|min:5',
+            'product.description' => 'required|max:500',
+            'product.color' => 'string',
+            'product.in_stock' => 'boolean',
+            'product.stock_date' => 'date',
+//        'product.category_id' =>'required|integer',
+            'productCategories' => 'required|array',//also separate rule
+            'photo' => 'image',//also separate rule
         ];
     }
 

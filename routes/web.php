@@ -18,8 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('products', ProductController::class);
-
+//Route::resource('products', ProductController::class);
+Route::get('products/index',\App\Http\Livewire\ProductIndex::class)->name('products.index');
+Route::get('products/create',\App\Http\Livewire\ProductForm::class)->name('products.create');
+Route::get('products/{product}/edit',\App\Http\Livewire\ProductForm::class)->name('products.edit');
 
 
 
