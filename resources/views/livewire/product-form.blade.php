@@ -35,6 +35,26 @@
     </div>
 
     <div class="form-group row">
+        <label for="category_id"
+               class="col-md-4 col-form-label text-md-right">{{ __('Categories') }}</label>
+        <div class="col-md-6">
+            <select multiple wire:model="product.category_id"
+                    class="form-control @error('product.category_id') is-invalid @enderror">
+                <option value="">-- choose categories --</option>
+                @foreach ($categories as $category)
+                    <option value="{{ $category->id }}">{{ $category->name }}</option>
+                @endforeach
+            </select>
+            @error('productCategories')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
+        </div>
+    </div>
+
+    {{-- MULTII SELECT --}}
+    <div class="form-group row">
         <label for="productCategories"
                class="col-md-4 col-form-label text-md-right">{{ __('Categories') }}</label>
         <div class="col-md-6">
@@ -52,13 +72,14 @@
             @enderror
         </div>
     </div>
+    {{-- END OF MULTII SELECT --}}
 
+    {{-- RADIO BOX --}}
     <div class="form-group row">
         <label for="color" class="col-md-4 col-form-label text-md-right">{{ __('Color') }}</label>
         <div class="col-md-6">
             @foreach (\App\Models\Product::COLORS_LIST as $key => $value)
-                <input wire:model="product.color"
-                       type="radio" value="{{ $key }}"/> {{ $value }}<br/>
+                <input wire:model="product.color" type="radio" value="{{ $key }}"/> {{ $value }}<br/>
             @endforeach
             @error('product.color')
             <span class="invalid-feedback" role="alert">
@@ -67,12 +88,13 @@
             @enderror
         </div>
     </div>
+    {{-- END OF RADIO BOX --}}
 
+    {{-- CHECKBOX --}}
     <div class="form-group row">
         <label for="color" class="col-md-4 col-form-label text-md-right"></label>
         <div class="col-md-6">
-            <input wire:model="product.in_stock"
-                   type="checkbox" value="1"/> In stock
+            <input wire:model="product.in_stock" type="checkbox" value="1"/> In stock
             @error('product.in_stock')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
@@ -80,6 +102,7 @@
             @enderror
         </div>
     </div>
+    {{-- END OF CHECKBOX --}}
 
     <div class="form-group row">
         <label for="stock_date" class="col-md-4 col-form-label text-md-right">{{ __('Stock Date') }}</label>
